@@ -36,4 +36,4 @@ jobs:
             git pull 
             yarn 
             yarn build
-            yarn start:prod
+            pm2 start --name service yarn -- start:prod
